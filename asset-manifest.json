@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/lora-lorawan/static/css/main.073c9b0a.css",
+    "main.js": "/lora-lorawan/static/js/main.cfd9735d.js",
+    "static/js/787.bee53032.chunk.js": "/lora-lorawan/static/js/787.bee53032.chunk.js",
+    "static/media/logo.svg": "/lora-lorawan/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/lora-lorawan/index.html",
+    "main.073c9b0a.css.map": "/lora-lorawan/static/css/main.073c9b0a.css.map",
+    "main.cfd9735d.js.map": "/lora-lorawan/static/js/main.cfd9735d.js.map",
+    "787.bee53032.chunk.js.map": "/lora-lorawan/static/js/787.bee53032.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.cfd9735d.js"
+  ]
+}
