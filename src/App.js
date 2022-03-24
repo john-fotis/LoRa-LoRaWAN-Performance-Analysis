@@ -4,20 +4,10 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <header className="App-header"></header>
+      <body>
+        <img src={"https://sismo.app/wp-content/uploads/2019/02/under-construction-gif-11.gif"} alt="" style={{width : "100%", height : "auto"}}/>
+      </body>
     </div>
   );
 }
