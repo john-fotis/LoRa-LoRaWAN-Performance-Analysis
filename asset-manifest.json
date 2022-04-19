@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/lora-lorawan/static/css/main.539b12ec.css",
-    "main.js": "/lora-lorawan/static/js/main.dc434a44.js",
+    "main.js": "/lora-lorawan/static/js/main.21e1a2da.js",
     "static/media/antenna.png": "/lora-lorawan/static/media/antenna.10b2768b5ab054109aeb.png",
     "index.html": "/lora-lorawan/index.html",
     "main.539b12ec.css.map": "/lora-lorawan/static/css/main.539b12ec.css.map",
-    "main.dc434a44.js.map": "/lora-lorawan/static/js/main.dc434a44.js.map"
+    "main.21e1a2da.js.map": "/lora-lorawan/static/js/main.21e1a2da.js.map"
   },
   "entrypoints": [
     "static/css/main.539b12ec.css",
-    "static/js/main.dc434a44.js"
+    "static/js/main.21e1a2da.js"
   ]
 }
