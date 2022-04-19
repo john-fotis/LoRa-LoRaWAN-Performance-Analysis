@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useMap, Marker, TileLayer, LayersControl, LayerGroup, Circle, Tooltip } from "react-leaflet";
-import s1 from '../assets/metrics/scenario1.js';
-import s2 from "../assets/metrics/scenario2.js";
+import s1 from '../assets/metrics/scenario1.json';
+import s2 from "../assets/metrics/scenario2.json";
 import selectIcon, { gatewayIcon } from "./MarkerIcon.js";
 import { circleTooltip, maxRangeTooltip } from "./TooltipContent.js";
 import OSM from "../config/OSM.js";
