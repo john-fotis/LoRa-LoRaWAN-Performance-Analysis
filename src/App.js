@@ -1,15 +1,13 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
+import MapView from './components/MapView';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header"></header>
-      <body>
-        <img src={"https://sismo.app/wp-content/uploads/2019/02/under-construction-gif-11.gif"} alt="" style={{width : "100%", height : "auto"}}/>
-      </body>
-    </div>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <div className='App'>
+        <MapView center = {[37.968357764526694, 23.76709967851639]} zoom1 = {17} zoom2 = {15} />
+      </div>
+    );
+  }
 }
-
-export default App;
