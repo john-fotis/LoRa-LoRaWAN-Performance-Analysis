@@ -169,27 +169,27 @@
                         "Latitude": 37.969,
                         "Longitude": 23.7663,
                         "Measurements": 10.0
+                    },
+                    {
+                        "MaxRSSI": -88.0,
+                        "MinRSSI": -109.0,
+                        "AverageRSSI": -92.34,
+                        "MedianRSSI": -92.5,
+                        "MaxSnr": 10.0,
+                        "MinSnr": 6.0,
+                        "AverageSnr": 8.4,
+                        "MedianSNR": 9.0,
+                        "AverageAccuracy": 8.966,
+                        "PDR": 100.0,
+                        "Latitude": 37.9687,
+                        "Longitude": 23.766,
+                        "Measurements": 10.0
                     }
                 ]
             },
             {
                 "SF": 8,
                 "sfData": [
-                    {
-                        "MaxRSSI": -85.0,
-                        "MinRSSI": -99.0,
-                        "AverageRSSI": -85.44,
-                        "MedianRSSI": -88.0,
-                        "MaxSnr": 9.75,
-                        "MinSnr": 7.25,
-                        "AverageSnr": 8.108,
-                        "MedianSNR": 8.5,
-                        "AverageAccuracy": 6.248,
-                        "PDR": 100.0,
-                        "Latitude": 37.9681,
-                        "Longitude": 23.766,
-                        "Measurements": 10.0
-                    },
                     {
                         "MaxRSSI": -77.0,
                         "MinRSSI": -87.0,
@@ -354,27 +354,27 @@
                         "Latitude": 37.9686,
                         "Longitude": 23.7661,
                         "Measurements": 10.0
+                    },
+                    {
+                        "MaxRSSI": -85.0,
+                        "MinRSSI": -99.0,
+                        "AverageRSSI": -85.44,
+                        "MedianRSSI": -88.0,
+                        "MaxSnr": 9.75,
+                        "MinSnr": 7.25,
+                        "AverageSnr": 8.108,
+                        "MedianSNR": 8.5,
+                        "AverageAccuracy": 6.248,
+                        "PDR": 100.0,
+                        "Latitude": 37.9681,
+                        "Longitude": 23.766,
+                        "Measurements": 10.0
                     }
                 ]
             },
             {
                 "SF": 9,
                 "sfData": [
-                    {
-                        "MaxRSSI": -85.0,
-                        "MinRSSI": -95.0,
-                        "AverageRSSI": -90.9,
-                        "MedianRSSI": -91.0,
-                        "MaxSnr": 10.25,
-                        "MinSnr": 7.25,
-                        "AverageSnr": 8.8,
-                        "MedianSNR": 9.0,
-                        "AverageAccuracy": 4.0,
-                        "PDR": 100.0,
-                        "Latitude": 37.9681,
-                        "Longitude": 23.766,
-                        "Measurements": 10.0
-                    },
                     {
                         "MaxRSSI": -79.0,
                         "MinRSSI": -93.0,
@@ -539,6 +539,21 @@
                         "Latitude": 37.9687,
                         "Longitude": 23.7661,
                         "Measurements": 10.0
+                    },
+                    {
+                        "MaxRSSI": -85.0,
+                        "MinRSSI": -95.0,
+                        "AverageRSSI": -90.9,
+                        "MedianRSSI": -91.0,
+                        "MaxSnr": 10.25,
+                        "MinSnr": 7.25,
+                        "AverageSnr": 8.8,
+                        "MedianSNR": 9.0,
+                        "AverageAccuracy": 4.0,
+                        "PDR": 100.0,
+                        "Latitude": 37.9681,
+                        "Longitude": 23.766,
+                        "Measurements": 10.0
                     }
                 ]
             }
@@ -550,21 +565,6 @@
             {
                 "SF": 7,
                 "sfData": [
-                    {
-                        "MaxRSSI": -93.0,
-                        "MinRSSI": -105.0,
-                        "AverageRSSI": -99.667,
-                        "MedianRSSI": -100.0,
-                        "MaxSnr": 8.75,
-                        "MinSnr": 1.5,
-                        "AverageSnr": 6.417,
-                        "MedianSNR": 8.0,
-                        "AverageAccuracy": 3.79,
-                        "PDR": 100.0,
-                        "Latitude": 37.9683,
-                        "Longitude": 23.7654,
-                        "Measurements": 9.0
-                    },
                     {
                         "MaxRSSI": -83.0,
                         "MinRSSI": -97.0,
@@ -729,27 +729,27 @@
                         "Latitude": 37.969,
                         "Longitude": 23.7657,
                         "Measurements": 11.0
+                    },
+                    {
+                        "MaxRSSI": -93.0,
+                        "MinRSSI": -105.0,
+                        "AverageRSSI": -99.667,
+                        "MedianRSSI": -100.0,
+                        "MaxSnr": 8.75,
+                        "MinSnr": 1.5,
+                        "AverageSnr": 6.417,
+                        "MedianSNR": 8.0,
+                        "AverageAccuracy": 3.79,
+                        "PDR": 100.0,
+                        "Latitude": 37.9683,
+                        "Longitude": 23.7654,
+                        "Measurements": 9.0
                     }
                 ]
             },
             {
                 "SF": 8,
                 "sfData": [
-                    {
-                        "MaxRSSI": -81.0,
-                        "MinRSSI": -95.0,
-                        "AverageRSSI": -87.82,
-                        "MedianRSSI": -92.5,
-                        "MaxSnr": 11.25,
-                        "MinSnr": 6.75,
-                        "AverageSnr": 9.535,
-                        "MedianSNR": 10.125,
-                        "AverageAccuracy": 5.019,
-                        "PDR": 100.0,
-                        "Latitude": 37.9671,
-                        "Longitude": 23.7672,
-                        "Measurements": 10.0
-                    },
                     {
                         "MaxRSSI": -88.0,
                         "MinRSSI": -101.0,
@@ -914,27 +914,27 @@
                         "Latitude": 37.9683,
                         "Longitude": 23.7655,
                         "Measurements": 11.0
+                    },
+                    {
+                        "MaxRSSI": -81.0,
+                        "MinRSSI": -95.0,
+                        "AverageRSSI": -87.82,
+                        "MedianRSSI": -92.5,
+                        "MaxSnr": 11.25,
+                        "MinSnr": 6.75,
+                        "AverageSnr": 9.535,
+                        "MedianSNR": 10.125,
+                        "AverageAccuracy": 5.019,
+                        "PDR": 100.0,
+                        "Latitude": 37.9671,
+                        "Longitude": 23.7672,
+                        "Measurements": 10.0
                     }
                 ]
             },
             {
                 "SF": 9,
                 "sfData": [
-                    {
-                        "MaxRSSI": -89.0,
-                        "MinRSSI": -103.0,
-                        "AverageRSSI": -90.345,
-                        "MedianRSSI": -93.0,
-                        "MaxSnr": 12.5,
-                        "MinSnr": 4.75,
-                        "AverageSnr": 9.262,
-                        "MedianSNR": 10.625,
-                        "AverageAccuracy": 7.0,
-                        "PDR": 100.0,
-                        "Latitude": 37.9671,
-                        "Longitude": 23.7672,
-                        "Measurements": 10.0
-                    },
                     {
                         "MaxRSSI": -78.0,
                         "MinRSSI": -101.0,
@@ -1099,6 +1099,21 @@
                         "Latitude": 37.9683,
                         "Longitude": 23.7654,
                         "Measurements": 11.0
+                    },
+                    {
+                        "MaxRSSI": -89.0,
+                        "MinRSSI": -103.0,
+                        "AverageRSSI": -90.345,
+                        "MedianRSSI": -93.0,
+                        "MaxSnr": 12.5,
+                        "MinSnr": 4.75,
+                        "AverageSnr": 9.262,
+                        "MedianSNR": 10.625,
+                        "AverageAccuracy": 7.0,
+                        "PDR": 100.0,
+                        "Latitude": 37.9671,
+                        "Longitude": 23.7672,
+                        "Measurements": 10.0
                     }
                 ]
             }
@@ -1110,21 +1125,6 @@
             {
                 "SF": 7,
                 "sfData": [
-                    {
-                        "MaxRSSI": -101.0,
-                        "MinRSSI": -112.0,
-                        "AverageRSSI": -105.0,
-                        "MedianRSSI": -107.0,
-                        "MaxSnr": 7.25,
-                        "MinSnr": -0.5,
-                        "AverageSnr": 3.57,
-                        "MedianSNR": 4.0,
-                        "AverageAccuracy": 15.651,
-                        "PDR": 100.0,
-                        "Latitude": 37.9691,
-                        "Longitude": 23.765,
-                        "Measurements": 10.0
-                    },
                     {
                         "MaxRSSI": -95.0,
                         "MinRSSI": -112.0,
@@ -1289,27 +1289,27 @@
                         "Latitude": 37.9698,
                         "Longitude": 23.7658,
                         "Measurements": 10.0
+                    },
+                    {
+                        "MaxRSSI": -101.0,
+                        "MinRSSI": -112.0,
+                        "AverageRSSI": -105.0,
+                        "MedianRSSI": -107.0,
+                        "MaxSnr": 7.25,
+                        "MinSnr": -0.5,
+                        "AverageSnr": 3.57,
+                        "MedianSNR": 4.0,
+                        "AverageAccuracy": 15.651,
+                        "PDR": 100.0,
+                        "Latitude": 37.9691,
+                        "Longitude": 23.765,
+                        "Measurements": 10.0
                     }
                 ]
             },
             {
                 "SF": 8,
                 "sfData": [
-                    {
-                        "MaxRSSI": -101.0,
-                        "MinRSSI": -116.0,
-                        "AverageRSSI": -107.79,
-                        "MedianRSSI": -110.5,
-                        "MaxSnr": 7.75,
-                        "MinSnr": -8.75,
-                        "AverageSnr": 0.973,
-                        "MedianSNR": 2.5,
-                        "AverageAccuracy": 4.405,
-                        "PDR": 100.0,
-                        "Latitude": 37.9691,
-                        "Longitude": 23.765,
-                        "Measurements": 10.0
-                    },
                     {
                         "MaxRSSI": -94.0,
                         "MinRSSI": -111.0,
@@ -1474,27 +1474,27 @@
                         "Latitude": 37.9699,
                         "Longitude": 23.7658,
                         "Measurements": 10.0
+                    },
+                    {
+                        "MaxRSSI": -101.0,
+                        "MinRSSI": -116.0,
+                        "AverageRSSI": -107.79,
+                        "MedianRSSI": -110.5,
+                        "MaxSnr": 7.75,
+                        "MinSnr": -8.75,
+                        "AverageSnr": 0.973,
+                        "MedianSNR": 2.5,
+                        "AverageAccuracy": 4.405,
+                        "PDR": 100.0,
+                        "Latitude": 37.9691,
+                        "Longitude": 23.765,
+                        "Measurements": 10.0
                     }
                 ]
             },
             {
                 "SF": 9,
                 "sfData": [
-                    {
-                        "MaxRSSI": -98.0,
-                        "MinRSSI": -109.0,
-                        "AverageRSSI": -100.658,
-                        "MedianRSSI": -105.0,
-                        "MaxSnr": 11.0,
-                        "MinSnr": 4.5,
-                        "AverageSnr": 7.812,
-                        "MedianSNR": 7.75,
-                        "AverageAccuracy": 5.385,
-                        "PDR": 100.0,
-                        "Latitude": 37.9691,
-                        "Longitude": 23.765,
-                        "Measurements": 13.0
-                    },
                     {
                         "MaxRSSI": -97.0,
                         "MinRSSI": -112.0,

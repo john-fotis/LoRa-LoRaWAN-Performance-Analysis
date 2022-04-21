@@ -88,8 +88,9 @@ def main():
         # Store the last point stats and clear local file data to prepare for next file
         addPoint(point, pointList, circle, sf, localRssi, localSnr, localAccuracy, localMeasurements, invalidMeasurements, currentLat, currentLon)
         print("Valid measurements: " + str(validMeasurements))
+        print('Points: ', len(pointList))
         validMeasurements = 0
-        for point in pointList: data.append(point)
+        for point in pointList: data.append(point.copy())
         pointList.clear()
 
     # Store the final data into the $outFile
