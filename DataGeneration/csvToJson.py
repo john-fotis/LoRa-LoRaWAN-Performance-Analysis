@@ -6,16 +6,19 @@ from itertools import groupby
 
 level1Name = ''
 
+# This script takes as input the CSV output of either circle.py or maxRange.py
+# The data is converted into JSON format and stored into a new corresponding file
+
 def main():
 
     # Argument validation
     if len(sys.argv) != 2:
-        print("Type: python ./script.py $inFile")
+        print("Type: python ./csvToJson.py $inFile")
         sys.exit(0)
     inFile = sys.argv[1]
     # Checking if directory exists
     if (os.path.exists(inFile) == False):
-        print("File does not exist")
+        print("File not found")
         sys.exit(0)
     outFile = inFile[:-4] + '.json'
     # Read the csv file
@@ -35,18 +38,20 @@ def main():
     level2Content = 'sfData'
 
     level1Objects = []
+    # Group data by $level1Name and exclude it from the child objects
     for k1, g1 in groupby(level1Data, getLevel1Key):
-
         level2Data = [{key: float(value) for key, value in d.items() if key != level1Name} for d in list(g1)]
         level2Objects = []
+        # Group data by $level2Name and exclude it from the child objects
         for k2, g2 in groupby(level2Data, getLevel2Key):
+            # Append all measurements to the level 1 object
             level2Objects.append (
                 {
                     level2Name: int(k2),
                     level2Content: [{key: float(value) for key, value in d.items() if key != level2Name} for d in list(g2)]
                 }
             )
-
+        # Append the level 1 object with all its level 2 child objects
         level1Objects.append (
             {
                 level1Name: k1,

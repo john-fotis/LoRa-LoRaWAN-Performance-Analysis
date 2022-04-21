@@ -19,7 +19,7 @@ def main():
 
     # Argument validation
     if len(sys.argv) != 2:
-        print("Type: python ./script.py $dirPath")
+        print("Type: python ./circle.py $dirPath")
         sys.exit(0)
     dirPath = sys.argv[1]
     # Checking if directory exists
@@ -35,8 +35,10 @@ def main():
     pointList = [point.copy()]
     # Adjust given folder path format if necessary
     if dirPath.endswith('\\'): pathLevels = dirPath.split('\\')
+    else: pathLevels = dirPath.split('/')
     folder = './'
     for level in range(1, len(pathLevels)-1): folder += str(pathLevels[level]) + '/'
+    # List all files to process in the folder
     files = [f for f in os.listdir(folder) if os.path.isfile(os.path.join(folder, f)) and str(f).endswith('.csv')]
     outFile = pathLevels[1] + '.csv'
 

@@ -16,7 +16,7 @@ def main():
 
     # Argument validation
     if len(sys.argv) != 2:
-        print("Type: python ./script.py $dirPath")
+        print("Type: python ./maxRange.py $dirPath")
         sys.exit(0)
     dirPath = sys.argv[1]
     # Checking if directory exists
@@ -27,10 +27,13 @@ def main():
     # Adjust given folder path format if necessary
     pathLevels, point, pointList, duplicatePoints, sf7, sf8, sf9, sf10, data = [], [], [], [], [], [], [], [], []
     if dirPath.endswith('\\'): pathLevels = dirPath.split('\\')
+    else: pathLevels = dirPath.split('/')
     folder = './'
     for level in range(1, len(pathLevels)-1): folder += str(pathLevels[level]) + '/'
+    # List all subfolders in the given folder
     subfolders = [f for f in os.listdir(folder)]
-    for subfolder in range(0, len(subfolders)): subfolders[subfolder] = folder + subfolders[subfolder] + '/'
+    for subfolder in range(0, len(subfolders)):
+        subfolders[subfolder] = folder + subfolders[subfolder] + '/'
 
     # Variables
     desiredValues = ["SpreadingFactor", "GatewayId", "GatewayTime", "Rssi", "Snr", "Latitude", "Longitude", "AccuracyMeters", "AccuracySource"]
@@ -39,7 +42,7 @@ def main():
 
     for subfolder in subfolders:
 
-        # List all CSV files in the desired folder
+        # List all CSV files in the current subfolder
         files = [f for f in os.listdir(subfolder) if os.path.isfile(os.path.join(subfolder, f)) and str(f).endswith('.csv')]
         area = str(subfolder).split('/')[-2]
 
