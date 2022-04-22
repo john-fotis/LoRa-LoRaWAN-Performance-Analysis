@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { useMap, Marker, TileLayer, LayersControl, LayerGroup, Circle, Tooltip } from "react-leaflet";
+import { useMap, Marker, TileLayer, LayersControl, LayerGroup, Circle } from "react-leaflet";
 import s1 from '../assets/metrics/scenario1.json';
 import s2 from "../assets/metrics/scenario2.json";
-import selectIcon, { gatewayIcon } from "./MarkerIcon.js";
+import selectIcon from "./MarkerIcon.js";
 import { circleTooltip, maxRangeTooltip } from "./TooltipContent.js";
 import OSM from "../config/OSM.js";
 
@@ -53,9 +53,6 @@ export default function MapContent(props) {
 
     return (
         <LayersControl position = "topright">
-            <Marker position = {props.center} icon = {gatewayIcon}>
-                <Tooltip direction = "top" opacity = {1} >Gateway</Tooltip>
-            </Marker>
             {/* Scenario 1 */}
             <LayersControl.BaseLayer name = "Scenario 1" checked>
             <TileLayer
