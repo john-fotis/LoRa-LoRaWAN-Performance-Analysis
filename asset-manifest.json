@@ -1,14 +1,30 @@
 {
   "files": {
     "main.css": "/lora-lorawan/static/css/main.539b12ec.css",
-    "main.js": "/lora-lorawan/static/js/main.03524d06.js",
+    "main.js": "/lora-lorawan/static/js/main.4d8c2232.js",
+    "static/media/2.png": "/lora-lorawan/static/media/2.488daf0a439b7f7ad5af.png",
+    "static/media/4.png": "/lora-lorawan/static/media/4.05c1eff00947b422113a.png",
+    "static/media/13.png": "/lora-lorawan/static/media/13.77372ccd62c6f50d8da3.png",
+    "static/media/7.png": "/lora-lorawan/static/media/7.2c1281b11e1952e25fe0.png",
+    "static/media/12.png": "/lora-lorawan/static/media/12.c2ce56e61dd3031e8aad.png",
+    "static/media/3.png": "/lora-lorawan/static/media/3.fa54e022d9cb719e3340.png",
+    "static/media/11.png": "/lora-lorawan/static/media/11.fda15b6d63cb9e813c39.png",
+    "static/media/5.png": "/lora-lorawan/static/media/5.375dcafe87173e40a73c.png",
+    "static/media/1.png": "/lora-lorawan/static/media/1.fb404fd244a6793195fa.png",
+    "static/media/9.png": "/lora-lorawan/static/media/9.a13134a7e0adf7889f3a.png",
+    "static/media/10.png": "/lora-lorawan/static/media/10.4f303474c5111fe59236.png",
+    "static/media/14.png": "/lora-lorawan/static/media/14.7dff05efd32a4b4e301a.png",
+    "static/media/8.png": "/lora-lorawan/static/media/8.a836fb74e51b6f5412c6.png",
+    "static/media/6.png": "/lora-lorawan/static/media/6.a98541a71edebf180721.png",
+    "static/media/lorixOne.png": "/lora-lorawan/static/media/lorixOne.d1dc2c6aed3d88e456dd.png",
+    "static/media/cameraMarker.png": "/lora-lorawan/static/media/cameraMarker.5373a7293f330055c0f9.png",
     "static/media/antenna.png": "/lora-lorawan/static/media/antenna.10b2768b5ab054109aeb.png",
     "index.html": "/lora-lorawan/index.html",
     "main.539b12ec.css.map": "/lora-lorawan/static/css/main.539b12ec.css.map",
-    "main.03524d06.js.map": "/lora-lorawan/static/js/main.03524d06.js.map"
+    "main.4d8c2232.js.map": "/lora-lorawan/static/js/main.4d8c2232.js.map"
   },
   "entrypoints": [
     "static/css/main.539b12ec.css",
-    "static/js/main.03524d06.js"
+    "static/js/main.4d8c2232.js"
   ]
 }
