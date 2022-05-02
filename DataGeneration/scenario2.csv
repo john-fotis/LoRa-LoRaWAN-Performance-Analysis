@@ -1,4 +1,4 @@
-Area,SF,RSSI,SNR,Latitude,Longitude,Distance
+Area,SF,Rssi,Snr,Latitude,Longitude,Distance
 east,7,-116,-7.0,37.9676,23.7807,1195.194
 east,7,-117,-7.25,37.9671,23.7821,1322.367
 east,7,-117,-2.25,37.9669,23.7824,1351.01

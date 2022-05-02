@@ -36,8 +36,8 @@ def main():
         subfolders[subfolder] = folder + subfolders[subfolder] + '/'
 
     # Variables
-    desiredValues = ["SpreadingFactor", "GatewayId", "GatewayTime", "Rssi", "Snr", "Latitude", "Longitude", "AccuracyMeters", "AccuracySource"]
-    columns = ['Area', 'SF', 'RSSI', 'SNR', 'Latitude', 'Longitude', 'Distance']
+    desiredValues = ["SpreadingFactor", "GatewayId", "GatewayTime", "Rssi", "Snr", "Latitude", "Longitude"]
+    columns = ['Area', 'SF', 'Rssi', 'Snr', 'Latitude', 'Longitude', 'Distance']
     outFile = pathLevels[1] + '.csv'
 
     for subfolder in subfolders:
@@ -103,6 +103,8 @@ def main():
         write.writerow(columns)
         for record in data:
             write.writerow(record)
+    print(f'Output stored in {outFile}')
+
     return
 
 # Returns distance from Gateway in meters

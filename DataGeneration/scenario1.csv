@@ -1,4 +1,4 @@
-Circle,SF,MaxRSSI,MinRSSI,AverageRSSI,MedianRSSI,MaxSnr,MinSnr,AverageSnr,MedianSNR,AverageAccuracy,PDR,Latitude,Longitude,Measurements
+Radius,SF,MaxRssi,MinRssi,AverageRssi,MedianRssi,MaxSnr,MinSnr,AverageSnr,MedianSnr,AverageAccuracy,PDR,Latitude,Longitude,Measurements
 100,7,-92,-107,-97.24,-98.0,10.0,5.5,8.176,8.625,4.4,100.0,37.9682,23.766,10
 100,7,-81,-97,-87.065,-87.0,10.25,6.75,8.503,8.625,4.2,100.0,37.9677,23.7663,10
 100,7,-79,-89,-81.712,-83.0,10.25,6.75,8.588,9.5,9.393,100.0,37.9676,23.7668,12

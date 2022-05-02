@@ -28,22 +28,23 @@ def main():
         sys.exit(0)
     # Variables
     standardOffset = 0.00015
-    pointsVisited, localMeasurements, currentLat, currentLon, validMeasurements, invalidMeasurements, tempLat, tempLon = 0, 0, 0, 0, 0, 0, 0, 0
+    pointsVisited, localMeasurements, currentLat, currentLon, validMeasurements, invalidMeasurements, tempLat, tempLon = 1, 0, 0, 0, 0, 0, 0, 0
     pathLevels, point, pointList, data, localRssi, localSnr, localAccuracy = [], [], [], [], [], [], []
     desiredValues = ["GatewayId", "GatewayTime", "SpreadingFactor", "Rssi", "Snr", "Latitude", "Longitude", "AccuracyMeters", "AccuracySource"]
-    point = ['Circle', 'SF', 'MaxRSSI', 'MinRSSI', 'AverageRSSI', 'MedianRSSI', 'MaxSnr', 'MinSnr', 'AverageSnr', 'MedianSNR', 'AverageAccuracy', 'PDR', 'Latitude', 'Longitude', 'Measurements']
+    point = ['Radius', 'SF', 'MaxRssi', 'MinRssi', 'AverageRssi', 'MedianRssi', 'MaxSnr', 'MinSnr', 'AverageSnr', 'MedianSnr', 'AverageAccuracy', 'PDR', 'Latitude', 'Longitude', 'Measurements']
     pointList = [point.copy()]
+    folder = './'
     # Adjust given folder path format if necessary
     if dirPath.endswith('\\'): pathLevels = dirPath.split('\\')
     else: pathLevels = dirPath.split('/')
-    folder = './'
+    # Rebuild the folder path using '/' deliminator
     for level in range(1, len(pathLevels)-1): folder += str(pathLevels[level]) + '/'
     # List all files to process in the folder
     files = [f for f in os.listdir(folder) if os.path.isfile(os.path.join(folder, f)) and str(f).endswith('.csv')]
     outFile = pathLevels[1] + '.csv'
 
     for file in files:
-        circle = file[:3]
+        radius = file[:3]
         sf = file[-5]
         df = pd.read_csv(folder + file, usecols=desiredValues).T.to_dict()
 
@@ -55,7 +56,7 @@ def main():
 
                 if (df[d]["AccuracySource"] == "gps" and (abs(df[d]["Latitude"] - currentLat) > maxOffset or abs(df[d]["Longitude"] - currentLon) > maxOffset) and localMeasurements > 5) or (df[d]["AccuracySource"] == "network" and localMeasurements > 9):
                     if (validMeasurements):
-                        addPoint(point, pointList, circle, sf, localRssi, localSnr, localAccuracy, localMeasurements, invalidMeasurements, currentLat, currentLon)
+                        addPoint(point, pointList, radius, sf, localRssi, localSnr, localAccuracy, localMeasurements, invalidMeasurements, currentLat, currentLon)
                     localRssi.clear()
                     localSnr.clear()
                     localAccuracy.clear()
@@ -86,10 +87,9 @@ def main():
                     else: invalidMeasurements = 0
 
         # Store the last point stats and clear local file data to prepare for next file
-        addPoint(point, pointList, circle, sf, localRssi, localSnr, localAccuracy, localMeasurements, invalidMeasurements, currentLat, currentLon)
-        print("Valid measurements: " + str(validMeasurements))
-        print('Points: ', len(pointList))
-        validMeasurements = 0
+        addPoint(point, pointList, radius, sf, localRssi, localSnr, localAccuracy, localMeasurements, invalidMeasurements, currentLat, currentLon)
+        print(f'Radius = {radius}m, SF = {sf}, Valid measurements = {validMeasurements}, Points = {pointsVisited}')
+        validMeasurements = pointsVisited = 0
         for point in pointList: data.append(point.copy())
         pointList.clear()
 
@@ -97,11 +97,13 @@ def main():
     with open(outFile, 'w') as f:
         write = csv.writer(f)
         write.writerows(data)
+    print(f'Output stored in {outFile}')
+
     return
 
-def addPoint(point, pointList, circle, sf, localRssi, localSnr, localAccuracy, localMeasurements, invalidMeasurements, currentLat, currentLon):
+def addPoint(point, pointList, radius, sf, localRssi, localSnr, localAccuracy, localMeasurements, invalidMeasurements, currentLat, currentLon):
     point.clear()
-    point.append(circle)
+    point.append(radius)
     point.append(sf)
     point.append(max(localRssi))
     point.append(min(localRssi))
