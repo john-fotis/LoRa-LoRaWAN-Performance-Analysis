@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/lora-lorawan/static/css/main.4498b786.css",
-    "main.js": "/lora-lorawan/static/js/main.b817f08c.js",
+    "main.js": "/lora-lorawan/static/js/main.07ef416d.js",
     "static/media/3.png": "/lora-lorawan/static/media/3.152c58060b4188750132.png",
     "static/media/2.png": "/lora-lorawan/static/media/2.488daf0a439b7f7ad5af.png",
     "static/media/4.png": "/lora-lorawan/static/media/4.05c1eff00947b422113a.png",
@@ -21,10 +21,10 @@
     "static/media/antenna.png": "/lora-lorawan/static/media/antenna.10b2768b5ab054109aeb.png",
     "index.html": "/lora-lorawan/index.html",
     "main.4498b786.css.map": "/lora-lorawan/static/css/main.4498b786.css.map",
-    "main.b817f08c.js.map": "/lora-lorawan/static/js/main.b817f08c.js.map"
+    "main.07ef416d.js.map": "/lora-lorawan/static/js/main.07ef416d.js.map"
   },
   "entrypoints": [
     "static/css/main.4498b786.css",
-    "static/js/main.b817f08c.js"
+    "static/js/main.07ef416d.js"
   ]
 }
