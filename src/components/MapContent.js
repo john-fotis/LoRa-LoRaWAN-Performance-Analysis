@@ -15,7 +15,7 @@ export default function MapContent(props) {
     const [sc2Sf8, setSc2Sf8] = useState([]);
     const [sc2Sf9, setSc2Sf9] = useState([]);
     const [sc2Sf10, setSc2Sf10] = useState([]);
-    const mapRef = useMap();
+    const mapContext = useMap();
 
     // sc1 = [sc1Sf7Data[], sf8Data[], sf9Data[]]
     var sc1 = [[], [], []];
@@ -33,7 +33,7 @@ export default function MapContent(props) {
         setSc1Sf8(sc1[1]);
         setSc1Sf9(sc1[2]);
         setScenario(true);
-        mapRef.setView(props.center, props.zoom1)
+        mapContext.setView(props.center, props.zoom1)
     };
 
     const applyScenario2 = () => {
@@ -48,7 +48,7 @@ export default function MapContent(props) {
         setSc2Sf9(sc2[2]);
         setSc2Sf10(sc2[3]);
         setScenario(false);
-        mapRef.setView(props.center, props.zoom2)
+        mapContext.setView(props.center, props.zoom2)
     };
 
     return (
@@ -104,7 +104,7 @@ export default function MapContent(props) {
                 <Marker
                     key = {k}
                     position = {[point.Latitude, point.Longitude]}
-                    icon = {selectIcon(point.AverageRSSI)}
+                    icon = {selectIcon(point.AverageRssi)}
                 >
                     {circleTooltip(7, point)}
                 </Marker>
@@ -113,7 +113,7 @@ export default function MapContent(props) {
                 <Marker
                     key = {k}
                     position = {[point.Latitude, point.Longitude]}
-                    icon = {selectIcon(point.RSSI)}
+                    icon = {selectIcon(point.Rssi)}
                 >
                     {maxRangeTooltip(7, point)}
                 </Marker>
@@ -127,7 +127,7 @@ export default function MapContent(props) {
                 <Marker
                     key = {k}
                     position = {[point.Latitude, point.Longitude]}
-                    icon = {selectIcon(point.AverageRSSI)}
+                    icon = {selectIcon(point.AverageRssi)}
                 >
                     {circleTooltip(8, point)}
                 </Marker>
@@ -136,7 +136,7 @@ export default function MapContent(props) {
                 <Marker
                     key = {k}
                     position = {[point.Latitude, point.Longitude]}
-                    icon = {selectIcon(point.RSSI)}
+                    icon = {selectIcon(point.Rssi)}
                 >
                     {maxRangeTooltip(8, point)}
                 </Marker>
@@ -150,7 +150,7 @@ export default function MapContent(props) {
                 <Marker
                     key = {k}
                     position = {[point.Latitude, point.Longitude]}
-                    icon = {selectIcon(point.AverageRSSI)}
+                    icon = {selectIcon(point.AverageRssi)}
                 >
                     {circleTooltip(9, point)}
                 </Marker>
@@ -159,7 +159,7 @@ export default function MapContent(props) {
                 <Marker
                     key = {k}
                     position = {[point.Latitude, point.Longitude]}
-                    icon = {selectIcon(point.RSSI)}
+                    icon = {selectIcon(point.Rssi)}
                 >
                     {maxRangeTooltip(9, point)}
                 </Marker>
@@ -174,7 +174,7 @@ export default function MapContent(props) {
                     <Marker
                         key = {k}
                         position = {[point.Latitude, point.Longitude]}
-                        icon = {selectIcon(point.RSSI)}
+                        icon = {selectIcon(point.Rssi)}
                     >
                         {maxRangeTooltip(10, point)}
                     </Marker>
