@@ -27,8 +27,8 @@ def main():
         level1Data = [dict(d) for d in r]
     # Check which scenario data we are about to process
     global level1Name
-    if list(level1Data[0].keys())[0] == 'Circle':
-        level1Name = 'Circle'
+    if list(level1Data[0].keys())[0] == 'Radius':
+        level1Name = 'Radius'
         level1Content = 'circleData'
     else:
         level1Name = 'Area'
@@ -58,9 +58,12 @@ def main():
                 level1Content: level2Objects
             }
         )
+
     # Store the final data in $outFile
     with open(outFile, 'w') as f:
         json.dump(level1Objects, f, indent = 4)
+    print(f'Output stored in {outFile[2:]}')
+
     return
 
 
