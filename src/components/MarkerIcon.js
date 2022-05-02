@@ -54,7 +54,7 @@ export const gatewayIcon = new Icon({
 
 export const imgContentIcon = new Icon({
     iconUrl: cameraIcon,
-    iconSize: [40, 40],
+    iconSize: [50, 50],
 });
 
 export default selectIcon;
