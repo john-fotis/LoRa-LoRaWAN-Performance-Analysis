@@ -3,39 +3,36 @@ import L from "leaflet";
 
 function Legend({ map }) {
     useEffect(() => {
-    if (map) {
-        const getColor = value => {
-            return value >= -95 ? "red"
-                 : value >= -100 ? "orange"
-                 : value >= -105 ? "yellow"
-                 : value >= -110 ? "green"
-                 : value >= -115 ? "blue"
-                 : "purple";
-        };
-        const legend = L.control({ position: "bottomleft" });
+        if (map) {
+            const getColor = value => {
+                return value >= -95 ? "red"
+                    : value >= -100 ? "orange"
+                    : value >= -105 ? "yellow"
+                    : value >= -110 ? "green"
+                    : value >= -115 ? "blue"
+                    : "purple";
+            };
 
-        legend.onAdd = () => {
-            const div = L.DomUtil.create("div", "info legend");
-            const grades = [-90, -95, -100, -105, -110, -115];
-            let labels = [];
-            let from, to;
+            const legend = L.control({ position: "bottomleft" });
 
-            for (from = 0; from < grades.length - 1; from++) {
-                to = from + 1;
-                labels.push(
-                    '<i style="background:' + getColor(grades[to]) +
-                    '">&nbsp&nbsp&nbsp&nbsp</i> &nbsp' + 
-                    grades[from] + (grades[to] ? "dB to " + grades[to] : "") + "dB"
-                );
-            }
-            labels.push('<i style="background:' + getColor(grades[to + 1]) + '">&nbsp&nbsp&nbsp&nbsp</i> &nbsp&lt; ' + grades[from] + 'dB');
+            legend.onAdd = () => {
+                const div = L.DomUtil.create("div", "info legend");
+                const grades = [-90, -95, -100, -105, -110, -115];
+                let labels = [];
+                let level = 1;
 
-            div.innerHTML = labels.join("<br>");
-            return div;
-        };
+                // Fill the legend with entries for each RSSI level range
+                labels.push('<i style="background:' + getColor(grades[level]) + '">&nbsp&nbsp&nbsp&nbsp</i> &nbsp&gt; ' + grades[level] + 'dB');
+                for (level = 1; level < grades.length - 1; level++)
+                    labels.push('<i style="background:' + getColor(grades[level + 1]) + '">&nbsp&nbsp&nbsp&nbsp</i> &nbsp' + grades[level] + (grades[level] ? "dB to " + grades[level + 1] : "") + "dB");
+                labels.push('<i style="background:' + getColor(grades[level + 1]) + '">&nbsp&nbsp&nbsp&nbsp</i> &nbsp&lt; ' + grades[level] + 'dB');
 
-        legend.addTo(map);
-    }
+                div.innerHTML = labels.join("<br>");
+                return div;
+            };
+
+            legend.addTo(map);
+        }
     }, [map]);
     return null;
 }
