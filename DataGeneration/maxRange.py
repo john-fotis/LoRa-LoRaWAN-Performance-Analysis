@@ -74,7 +74,7 @@ def main():
                     else: duplicatePoints.append(point2)
                 else:
                     # If both points have the same distance from the gateway keep the one with the best RSSI
-                    if point1[1] < point2[1]: duplicatePoints.append(point1)
+                    if point1[2] < point2[2]: duplicatePoints.append(point1)
                     else: duplicatePoints.append(point2)
         # Remove all duplicate points
         for p in duplicatePoints:
