@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/LoRa-LoRaWAN-Performance-Analysis/static/css/main.4498b786.css",
-    "main.js": "/LoRa-LoRaWAN-Performance-Analysis/static/js/main.50cf61f6.js",
+    "main.js": "/LoRa-LoRaWAN-Performance-Analysis/static/js/main.5c86e29b.js",
     "static/media/3.png": "/LoRa-LoRaWAN-Performance-Analysis/static/media/3.152c58060b4188750132.png",
     "static/media/2.png": "/LoRa-LoRaWAN-Performance-Analysis/static/media/2.488daf0a439b7f7ad5af.png",
     "static/media/4.png": "/LoRa-LoRaWAN-Performance-Analysis/static/media/4.05c1eff00947b422113a.png",
@@ -21,10 +21,10 @@
     "static/media/antenna.png": "/LoRa-LoRaWAN-Performance-Analysis/static/media/antenna.10b2768b5ab054109aeb.png",
     "index.html": "/LoRa-LoRaWAN-Performance-Analysis/index.html",
     "main.4498b786.css.map": "/LoRa-LoRaWAN-Performance-Analysis/static/css/main.4498b786.css.map",
-    "main.50cf61f6.js.map": "/LoRa-LoRaWAN-Performance-Analysis/static/js/main.50cf61f6.js.map"
+    "main.5c86e29b.js.map": "/LoRa-LoRaWAN-Performance-Analysis/static/js/main.5c86e29b.js.map"
   },
   "entrypoints": [
     "static/css/main.4498b786.css",
-    "static/js/main.50cf61f6.js"
+    "static/js/main.5c86e29b.js"
   ]
 }
