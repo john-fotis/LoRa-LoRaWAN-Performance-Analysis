@@ -1,70 +1,21 @@
-# Getting Started with Create React App
+# [Performance analysis of LoRa and LoRaWAN communications](https://github.com/john-fotis/LoRa-LoRaWAN-Performance-Analysis/blob/master/Thesis.pdf)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Thesis Abstract
+In a rapidly developing technological world, where many devices need to be connected to the network to offer multiple services to the end user, the need for high connectivity and low power consumption is vital. Internet of Things (IoT), as well as the user’s will to be always online and interact with the physical and the virtual world, are the crucial factors that create this necessity. The technological and practical requirements are many and imperative, given that a very large amount of data has to be exchanged wirelessly fast while keeping the communication secure.
 
-## Available Scripts
+Low Power Wide Area Networks (LPWANs) is an emerging networking paradigm in the area of IoT communications. Its main purpose is to enable sensor-like devices to successfully send data to a receiver in a periodic-based or event-driven scheme, by using as little power as possible to reach the distant concentrator. These goals are achievable, among others, with the use of LoRa and LoRaWAN technologies. LoRa modulation technique is applied on messages that follow the LoRaWAN protocol and promises wide coverage, low energy consumption and highly reliable data transmission. This technology stack has contributed to the realization of many IoT applications, spanning in a plethora of use cases, like energy management, protection from natural disasters, environmental pollution check, and hazardous event detection.
 
-In the project directory, you can run:
+This thesis is focused on evaluating the LoRa modulation technique, which resides in the Physical layer (PHY), as well as the Medium Access Control layer (MAC) protocol LoRaWAN, that sits on top of LoRa. Initially, we lay the theoretical background on the two technologies. With the theoretical background established, we continue to the definition and implementation of two experimental scenarios, in order to highlight the real capabilities of this networking stack. Specifically, we execute a series of measurements with commercial off-the-shelf LoRaWAN equipment, in an effort to comprehend the relationship between some parameters of LoRa links (e.g., SF) with some common network performance metrics (e.g., RSSI).  Afterwards, we process the results of these experiments and we present the outcome in a tangible and understandable way, using a custom-made web application.
 
-### `yarn start`
+## Thesis Results - Web Application
+The Web application where you can see the final results of our experiments is available [here](https://john-fotis.github.io/LoRa-LoRaWAN-Performance-Analysis/).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Web Application Data Generation
+For more information on how we generated and processed the data, as well as instructions on how to do it yourself, you can consult this [README](https://github.com/john-fotis/LoRa-LoRaWAN-Performance-Analysis/blob/master/DataGeneration/README.md) file.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Official publication
+[Pergamos/Performance-analysis-of-LoRa-and-LoRaWAN-communications](https://pergamos.lib.uoa.gr/uoa/dl/frontend/el/browse/3221431)
 
-### `yarn test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `yarn build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contributors
+- [John Fotis](https://github.com/john-fotis)
+- [Katerina Giannopoulou](https://github.com/katerinagiann)
