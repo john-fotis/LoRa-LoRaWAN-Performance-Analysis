@@ -17,9 +17,9 @@ export default function MapContent(props) {
     const [sc2Sf10, setSc2Sf10] = useState([]);
     const mapContext = useMap();
 
-    // sc1 = [sc1Sf7Data[], sf8Data[], sf9Data[]]
+    // sc1 = [sc1Sf7Data[], sc1Sf8Data[], sc1Sf9Data[]]
     var sc1 = [[], [], []];
-    // sc2 = [sc1Sf7Data[], sf8Data[], sf9Data[], sf10Data[]]
+    // sc2 = [sc2Sf7Data[], sc2Sf8Data[], sc2Sf9Data[], sc2Sf10Data[]]
     var sc2 = [[], [], [], []];
 
     const applyScenario1 = () => {

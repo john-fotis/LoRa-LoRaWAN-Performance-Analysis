@@ -8,7 +8,9 @@ Low Power Wide Area Networks (LPWANs) is an emerging networking paradigm in the 
 This thesis is focused on evaluating the LoRa modulation technique, which resides in the Physical layer (PHY), as well as the Medium Access Control layer (MAC) protocol LoRaWAN, that sits on top of LoRa. Initially, we lay the theoretical background on the two technologies. With the theoretical background established, we continue to the definition and implementation of two experimental scenarios, in order to highlight the real capabilities of this networking stack. Specifically, we execute a series of measurements with commercial off-the-shelf LoRaWAN equipment, in an effort to comprehend the relationship between some parameters of LoRa links (e.g., SF) with some common network performance metrics (e.g., RSSI).  Afterwards, we process the results of these experiments and we present the outcome in a tangible and understandable way, using a custom-made web application.
 
 ## Thesis Results - Web Application
-The Web application where you can see the final results of our experiments is available [here](https://john-fotis.github.io/LoRa-LoRaWAN-Performance-Analysis/).
+* The Web application where you can see the final results of our experiments is available [here](https://john-fotis.github.io/LoRa-LoRaWAN-Performance-Analysis/).
+* Alternatively, you can build the app locally by installing [Docker](https://www.docker.com/products/docker-desktop/) and running `docker compose up -d` in a bash shell at the root of this repo.<br/>
+Then, you can visit http://localhost:9000 to see the application.
 
 ## Web Application Data Generation
 For more information on how we generated and processed the data, as well as instructions on how to do it yourself, you can consult this [README](https://github.com/john-fotis/LoRa-LoRaWAN-Performance-Analysis/blob/master/DataGeneration/README.md) file.
