@@ -6,7 +6,6 @@ EXPOSE ${port}
 WORKDIR /home/node/app
 COPY package*.json .
 COPY public ./public
-COPY src ./src
 RUN npm install
 ENTRYPOINT [ "npm" ]
 CMD [ "start" ]

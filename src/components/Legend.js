@@ -4,6 +4,9 @@ import L from "leaflet";
 function Legend({ map }) {
     useEffect(() => {
         if (map) {
+            // Clear old legend component if exists
+            if (map.legend) {map.removeControl(map.legend);}
+
             const getColor = value => {
                 return value >= -95 ? "red"
                     : value >= -100 ? "orange"
@@ -32,6 +35,7 @@ function Legend({ map }) {
             };
 
             legend.addTo(map);
+            map.legend = legend
         }
     }, [map]);
     return null;
