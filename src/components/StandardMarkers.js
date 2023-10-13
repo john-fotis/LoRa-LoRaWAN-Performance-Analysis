@@ -1,20 +1,20 @@
 import { FeatureGroup, Marker, Popup } from 'react-leaflet';
 import { gatewayIcon, imgContentIcon } from './MarkerIcon.js';
-import lorixOne from '../assets/misc/lorixOne.png';
-import image1 from '../assets/misc/1.png';
-import image2 from '../assets/misc/2.png';
-import image3 from '../assets/misc/3.png';
-import image4 from '../assets/misc/4.png';
-import image5 from '../assets/misc/5.png';
-import image6 from '../assets/misc/6.png';
-import image7 from '../assets/misc/7.png';
-import image8 from '../assets/misc/8.png';
-import image9 from '../assets/misc/9.png';
-import image10 from '../assets/misc/10.png';
-import image11 from '../assets/misc/11.png';
-import image12 from '../assets/misc/12.png';
-import image13 from '../assets/misc/13.png';
-import image14 from '../assets/misc/14.png';
+import lorixOne from '../assets/images/lorixOne.png';
+import image1 from '../assets/images/1.png';
+import image2 from '../assets/images/2.png';
+import image3 from '../assets/images/3.png';
+import image4 from '../assets/images/4.png';
+import image5 from '../assets/images/5.png';
+import image6 from '../assets/images/6.png';
+import image7 from '../assets/images/7.png';
+import image8 from '../assets/images/8.png';
+import image9 from '../assets/images/9.png';
+import image10 from '../assets/images/10.png';
+import image11 from '../assets/images/11.png';
+import image12 from '../assets/images/12.png';
+import image13 from '../assets/images/13.png';
+import image14 from '../assets/images/14.png';
 
 const StandardMarkers = ({gatewayCoords}) => {
     return (
