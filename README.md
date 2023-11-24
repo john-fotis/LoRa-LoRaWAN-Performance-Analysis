@@ -9,8 +9,6 @@ This thesis is focused on evaluating the LoRa modulation technique, which reside
 
 ## Thesis Results - Web Application
 * The Web application where you can see the final results of our experiments is available [here](https://john-fotis.github.io/LoRa-LoRaWAN-Performance-Analysis/).
-* Alternatively, you can build the app locally by installing [Docker](https://www.docker.com/products/docker-desktop/) and running `docker compose up -d` in a bash shell at the root of this repo.<br/>
-Then, you can visit http://localhost:3000 to see the application.
 
 ## Web Application Data Generation
 For more information on how we generated and processed the data, as well as instructions on how to do it yourself, you can consult this [README](https://github.com/john-fotis/LoRa-LoRaWAN-Performance-Analysis/blob/master/DataGeneration/README.md) file.

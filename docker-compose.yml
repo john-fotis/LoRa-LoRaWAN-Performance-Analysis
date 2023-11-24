@@ -1,14 +1,16 @@
 version: "3"
 services:
-  node:
-    container_name: ui_map
+  ui:
+    container_name: ui
     build:
       context: .
       dockerfile: Dockerfile.dev
     ports:
       - 3000:3000
     environment:
-      - NODE_ENV=production
+      - REACT_APP_API_URL=http://localhost:1880
+      - REACT_APP_GRAFANA_DASHBOARD_URL=http://localhost:9000/d/OodDRfonk/workshop-application?orgId=1&from=now-6h&to=now&refresh=1m
+      - REACT_APP_REFRESH_INTERVAL=60 # (seconds)
     volumes:
       - ./src/:/home/node/app/src
     healthcheck:

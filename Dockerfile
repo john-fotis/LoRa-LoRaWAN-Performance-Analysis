@@ -1,12 +1,12 @@
-FROM node:19
-ARG node_env=production
+FROM node:20
 ARG port=3000
-ENV NODE_ENV=${node_env}
 EXPOSE ${port}
 WORKDIR /home/node/app
-COPY package*.json .
 COPY public ./public
+COPY package*.json .
 COPY src ./src
 RUN npm install
-ENTRYPOINT [ "npm" ]
-CMD [ "start" ]
+COPY entrypoint.sh .
+RUN chmod +x ./entrypoint.sh
+ENTRYPOINT [ "bash" ]
+CMD [ "-c", "./entrypoint.sh" ]
