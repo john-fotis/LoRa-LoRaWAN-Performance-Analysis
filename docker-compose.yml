@@ -13,9 +13,16 @@ services:
       - REACT_APP_REFRESH_INTERVAL=60 # (seconds)
     volumes:
       - ./src/:/home/node/app/src
+    networks:
+      - default
     healthcheck:
       test: ["CMD", "curl", "-s", "localhost:3000"]
       interval: 10s
       timeout: 5s
       retries: 3
       start_period: 10s
+
+networks:
+  default:
+    name: mdpi_default
+    external: true
